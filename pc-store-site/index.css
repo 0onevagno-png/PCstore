@@ -1,0 +1,168 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Cinzel", sans-serif;
+}
+
+.nav-link {
+  font-family: Cinzel;
+  color: white;
+  font-weight: 800;
+  font-size: 1.4rem;
+}
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+h1,
+h2,
+h3 {
+  background: linear-gradient(
+    -44.68deg,
+    rgb(255, 229, 162),
+    rgb(191, 132, 26),
+    rgb(255, 205, 116)
+  );
+  color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Cinzel;
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+
+.gold-button {
+  width: 10rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.94rem;
+  gap: 1rem;
+  border-radius: 0.31rem;
+  box-sizing: border-box;
+  background: linear-gradient(
+    -44.68deg,
+    rgb(255, 229, 162) 4.609%,
+    rgb(191, 132, 26) 50.029%,
+    rgb(255, 205, 116) 94.513%
+  );
+  color: black;
+  font-weight: bold;
+  transition: transform 0.2s ease;
+}
+
+.gold-button:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.text-primary-gradient {
+  background: linear-gradient(
+    -44.68deg,
+    rgb(255, 229, 162),
+    rgb(191, 132, 26),
+    rgb(255, 205, 116)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Слайдер */
+.hero-slider .slide {
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 5%;
+  padding-top: 10%;
+  color: white;
+}
+
+/* Фоны для каждого слайда */
+.slide-0 {
+  background-image: url("/assets/slide1.avif");
+}
+
+.slide-1 {
+  background-image: url("/assets/slide2.avif");
+}
+
+.slide-2 {
+  background-image: url("/assets/slide3.avif");
+}
+
+.slide-3 {
+  background-image: url("/assets/slide4.avif");
+}
+
+
+
+/* Точки для навигации */
+.slick-dots {
+  bottom: 20px;
+}
+
+.slick-dots li {
+  margin: 0 6px;
+}
+
+.slick-dots li button:before {
+  font-family: "slick";
+  font-size: 10px;
+  color: #999;
+  opacity: 0.6;
+  content: "•"; /* точка вместо цифры */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ffd700;
+  opacity: 1;
+}
+
+/* Стили для кнопки "Подробнее" */
+.dropdown-gold {
+  position: absolute;
+  top: 100%;
+  left: -10%;
+  margin-top: 0;
+  width: 12rem;
+  padding: 2px;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    -44.68deg,
+    rgb(255, 229, 162) 4.609%,
+    rgb(191, 132, 26) 50.029%,
+    rgb(255, 205, 116) 94.513%
+  );
+  z-index: 9999;
+}
+
+.dropdown-gold-inner {
+  background-color: #151515;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.admin-card {
+  background-color: #1f2937; /* темный фон */
+  color: #f9fafb; /* светлый текст */
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+.admin-card:hover {
+  background-color: #4b5563; 
+  color: #f3f4f6;
+  text-decoration: none;
+}
